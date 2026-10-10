@@ -1,0 +1,45 @@
+artifact_path: mlflow-artifacts:/1/models/m-3ef0a546cf6347278e269d1c43b299b0/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.skops
+    predict_fn: predict
+    python_version: 3.14.7
+  sklearn:
+    code: null
+    pickled_model: model.skops
+    serialization_format: skops
+    sklearn_version: 1.9.1
+    skops_trusted_types: null
+is_signature_from_type_hint: false
+mlflow_version: 3.16.1
+model_id: m-3ef0a546cf6347278e269d1c43b299b0
+model_size_bytes: 139957
+model_uuid: m-3ef0a546cf6347278e269d1c43b299b0
+prompts: null
+run_id: d85b7847e0de4380bfab4c7c77f2d0de
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "long", "name": "age", "required": true}, {"type": "string",
+    "name": "gender", "required": true}, {"type": "string", "name": "occupation_type",
+    "required": true}, {"type": "string", "name": "chronotype", "required": true},
+    {"type": "long", "name": "bedtime_phone_minutes", "required": true}, {"type":
+    "string", "name": "primary_bedtime_app", "required": true}, {"type": "long", "name":
+    "screen_brightness_pct", "required": true}, {"type": "long", "name": "blue_light_filter_active",
+    "required": true}, {"type": "long", "name": "caffeine_post_5pm_mg", "required":
+    true}, {"type": "long", "name": "physical_activity_min", "required": true}, {"type":
+    "double", "name": "sleep_latency_min", "required": true}, {"type": "double", "name":
+    "total_sleep_hours", "required": true}, {"type": "double", "name": "deep_sleep_pct",
+    "required": true}, {"type": "double", "name": "rem_sleep_pct", "required": true},
+    {"type": "long", "name": "morning_alarm_snoozes", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "object", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-10-10 22:47:16.547056'

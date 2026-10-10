@@ -154,9 +154,9 @@ env.bak/
 venv.bak/
 
 # MLflow local tracking data
-mlruns/
-mlartifacts/
-mlflow.db
+#mlruns/
+#mlartifacts/
+#mlflow.db
 
 # Spyder project settings
 .spyderproject
