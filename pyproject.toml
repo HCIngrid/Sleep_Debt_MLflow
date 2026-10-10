@@ -1,0 +1,32 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "sleep_debt_mlflow"
+version = "0.0.1"
+description = "Experimentaci\u00f3n reproducible de un modelo de regresi\u00f3n log\u00edstica para clasificar la deuda de sue\u00f1o con MLflow."
+authors = [
+  { name = "Ingrid HC" },
+]
+
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    
+]
+requires-python = "~=3.14.0"
+
+
+[tool.ruff]
+line-length = 99
+src = ["sleep_debt_mlflow"]
+include = ["pyproject.toml", "sleep_debt_mlflow/**/*.py"]
+
+[tool.ruff.lint]
+extend-select = ["I"]  # Add import sorting
+
+[tool.ruff.lint.isort]
+known-first-party = ["sleep_debt_mlflow"]
+force-sort-within-sections = true
+
